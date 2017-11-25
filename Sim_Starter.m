@@ -36,13 +36,13 @@ ISS_I = [102000000 6960000 5480000; 6960000 91000000 -590000; 5480000 -590000 16
 Ib =  [50 0 0; 0 50 0; 0 0 25];
 
 %spacecraft body vectors
-sc_cop = [1; 0; 0]; % spacecraft center of pressure
+sc_cop = [0; 0; 0]; %[1; 0; 0]; % spacecraft center of pressure
 sc_area = [1; 1; 1]; %area of each spacecraft face
 m_bus = [.5; 0; 0]; %magnetic field of spacecraft bus;
 
 %sim parameters
-dt = 0.01; %in seconds
-t_end = 5;
+dt = 0.1; %in seconds
+t_end = 5400;
 
 %initialize sim:
 model = 'ES_abbazabba';
